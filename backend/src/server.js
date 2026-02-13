@@ -1,10 +1,15 @@
 const express = require("express");
 
 const app = express();
-const port = 5000;
+const port = 8000;
 
-app.get("/", (req, res) => {
-  res.send("Hello Word !");
+app.use = express.json();
+
+app.get("/api/health", (req, res) => {
+  res.json({
+    status: "ok",
+    message: "server is running",
+  });
 });
 
 app.listen(port, () => {
