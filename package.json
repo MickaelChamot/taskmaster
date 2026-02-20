@@ -1,6 +1,7 @@
 {
   "name": "taskmaster",
   "version": "1.0.0",
+  "type": "module",
   "main": "backend/src/server.js",
   "scripts": {
     "start": "node backend/src/server.js",
@@ -12,6 +13,7 @@
   "description": "",
   "dependencies": {
     "dotenv": "^17.3.1",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "pg": "^8.18.0"
   }
 }
